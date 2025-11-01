@@ -5,12 +5,12 @@ public class Account {
   private String type;
   private double balance;
 
-  public Account(int id, String type, double balance)
-{
-  setId(id);
-  setType(type);
-  setBalance(balance);}
-  
+  public Account(int id, String type, double balance) {
+    setId(id);
+    setType(type);
+    setBalance(balance);
+  }
+
 
   public int getId() {
     return this.id;
