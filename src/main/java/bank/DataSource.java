@@ -31,18 +31,19 @@ public class DataSource {
           resultSet.getString("name"), 
           resultSet.getString("username"),
           resultSet.getString("password"),
-          resultSet.getInt("accountid"));
+          resultSet.getInt("account_id"));
         }
 
     }
     }catch(SQLException e){
   e.printStackTrace();
   }
-
+return customer;
 }
 
 public static void main(String[] args){
-  connect();
+  Customer customer = getCustomer("twest8o@friendfeed.com");
+  System.out.println(customer.getName());
 }
 }
 
